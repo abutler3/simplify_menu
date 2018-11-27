@@ -86,12 +86,12 @@ class MenuItems {
    */
   public function getMenuTree($menuId = 'main') {
     $this->setActiveMenuTree($menuId);
-
+    \Drupal::logger('simplify_menu')->debug('Checking');
     $parameters = new MenuTreeParameters();
     $parameters->onlyEnabledLinks();
     $manipulators = [
       // Try to eliminate the Inaccessible menu link by hiding checkAccess
-      // ['callable' => 'menu.default_tree_manipulators:checkAccess'],
+      ['callable' => 'menu.default_tree_manipulators:checkAccess'],
       ['callable' => 'menu.default_tree_manipulators:generateIndexAndSort'],
     ];
 

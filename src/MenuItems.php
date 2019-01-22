@@ -91,7 +91,7 @@ class MenuItems {
     $parameters->onlyEnabledLinks();
     $manipulators = [
       // Try to eliminate the Inaccessible menu link by hiding checkAccess
-      ['callable' => 'menu.default_tree_manipulators:checkAccess'],
+      // ['callable' => 'menu.default_tree_manipulators:checkAccess'],
       ['callable' => 'menu.default_tree_manipulators:generateIndexAndSort'],
     ];
 

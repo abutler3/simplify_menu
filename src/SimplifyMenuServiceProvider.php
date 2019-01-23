@@ -11,8 +11,6 @@ class SimplifyMenuServiceProvider extends ServiceProviderBase implements Service
 	public function alter(ContainerBuilder $container) {
 		$definition = $container->getDefinition('menu.default_tree_manipulators');
 		$definition->setClass('Drupal\simplify_menu\MenuLock\MenuLockTreeManipulator');
-		\Drupal::logger('Simp Menu Add')->warning('From Custom Module');
-
 	}
 
 }

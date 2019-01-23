@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\simplify_menu
+namespace Drupal\simplify_menu;
 
 use Drupal\Core\DependencyInjection\ServiceProviderBase;
 use Drupal\Core\DependencyInjection\ServiceProviderInterface;

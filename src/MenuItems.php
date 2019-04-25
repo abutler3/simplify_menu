@@ -86,7 +86,7 @@ class MenuItems {
    */
   public function getMenuTree($menuId = 'main') {
     $this->setActiveMenuTree($menuId);
-    \Drupal::logger('simplify_menu')->debug('Checking');
+    // \Drupal::logger('simplify_menu')->debug('Checking');
     $parameters = new MenuTreeParameters();
     $parameters->onlyEnabledLinks();
     $manipulators = [
